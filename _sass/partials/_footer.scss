@@ -1,0 +1,26 @@
+footer {
+	text-align: center;
+	border-top: 1px solid $border-color;
+	margin-bottom: $spacing-xs;
+
+	li, a{
+		display: inline-block;
+		color: $font-color;
+		padding: 0 $spacing-xs;
+		font-size: $font-size-s;
+
+		&:hover {
+			color: $link-color;
+		}
+	}
+
+	p {
+		margin: $spacing-xs auto 0;
+		font-size: $font-size-s;
+	}
+
+
+	.social {
+		margin: $spacing-s auto -5px auto;
+	}
+}

@@ -1,0 +1,29 @@
+# Site settings
+title: Nicholas Chedid
+email: nicholasfc@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nicholas Chedid is a student that loves web development and Network and Security. He is based at Porto, Portugal.
+baseurl: "" # the subpath of your site, e.g. /blog/
+permalink: /blog/:title
+url: "https://nicholaschedid.com" # the base hostname & protocol for your site
+github_username:  nicholasfc
+linkedin_username: nicholaschedid
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"

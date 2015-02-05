@@ -1,0 +1,20 @@
+//Colors
+$bg-color: white; /* #F8F8FF */
+$link-color: tomato; /* #FF6347 / FF5B08 */
+$border-color: lightgrey; /* D3D3D3 / E2E2E2 */
+$font-color: slategray; /* #708090 */
+
+//Fonts
+$font-family: 'Josefin Slab', sans-serif;
+$font-size-l: 1.25em; //font-size on desktop
+$font-size-m: $font-size-l * 0.9; //font-size on tablet
+$font-size-s: $font-size-l * 0.7; //font-size on phones
+
+//Spacings
+$spacing-xs: .5em;
+$spacing-s: $spacing-xs * 2; //1.0em
+$spacing-sm: $spacing-s + $spacing-xs; //1.5em
+$spacing-m: $spacing-sm + $spacing-xs; //2.0em
+$spacing-ml: $spacing-m + $spacing-xs; //2.5em
+$spacing-l: $spacing-ml + $spacing-s; //3.0em
+$spacing-xl: $spacing-l + $spacing-s; //3.5em

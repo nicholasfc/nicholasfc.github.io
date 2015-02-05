@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "This is a test"
+date:   2015-01-22 16:43:30
+categories: testing
+---
+
+##Just a heading
+
+I'm just testing to see if this works or not
+
+----
+
+Just a second thing here
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore totam repellat obcaecati pariatur ex a laborum, soluta animi ratione, labore ipsa recusandae quas veritatis voluptatum natus architecto voluptates. Eum, hic.
