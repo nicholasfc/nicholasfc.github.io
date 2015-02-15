@@ -1,17 +1,17 @@
-<footer class="site-footer">
-  <div class="wrapper">
-    <nav class="social-icons">
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
       <ul>
-        <li><a href="#"><span class="icon-mail4"></span></a></li>
-        <li><a href="#"><span class="icon-github4"></span></a></li>
-        <li><a href="#"><span class="icon-linkedin"></span></a></li>
+        <li><a href="mailto:{{ site.email }}"><span class="icon-mail4"></span></a></li>
+        <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><span class="icon-github4"></span></a></li>
+        <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="icon-linkedin" target="_blank"></span></a></li>
       </ul>
       <h3>
         &copy;2015 {{ site.title }}
       </h3>
-    </nav>
+    </footer>
   </div>
-</footer>
+</div>
 
 {% if site.google_analytics %}
   <script>
