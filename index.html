@@ -2,19 +2,38 @@
 layout: default
 ---
 
-<article>
+<div class="home">
 
-	<h1>Lorem.</h1>
+  <div class="posts">
+    {% for post in paginator.posts %}
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod <a href="#">recusandae</a>, aut maxime doloremque nobis repudiandae, omnis, rem minus cupiditate odit perspiciatis ipsum pariatur veniam eaque tenetur. Libero nihil excepturi, animi!
-	</p>
+    <div class="post">
+      <h2 class="post-title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <h3 class="post-date">
+        {{ post.date | date: "%B %-d, %Y" }}
+      </h3>
+      <p class="post-summary">
+        {{ post.summary }}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque enim, deserunt non libero ullam iste veniam, temporibus quia architecto aperiam sint <a href="#">dignissimos</a> reprehenderit nihil quisquam aliquam perferendis quod! Eveniet, alias.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ad!
-	</p>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore a dolorum blanditiis amet, cupiditate <a href="#">corporis</a>, minima suscipit, voluptates earum voluptas libero. Rerum molestiae numquam inventore fuga sunt nemo, nesciunt pariatur!</p>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, assumenda.</p>
-
-</article>
+  {% if paginator.total_pages > 1 %}
+    {% if paginator.previous_page %}
+    <div class="left">
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="pagination-item">Newer</span>
+      </a>
+    </div>
+    {% endif %}
+    {% if paginator.next_page %}
+    <div class="right">
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="pagination-item">Older</span>
+      </a>
+    </div>
+    {% endif %}
+  {% endif %}
